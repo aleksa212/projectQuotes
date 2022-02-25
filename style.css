@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 100vh;
+    justify-content: center;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    background-color: #e2e5e5;
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.wrapper {
+    justify-items: center;
+    align-items: center;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+    max-width: 1000px;
+    background-color: rgba(199, 198, 212, 0.5);
+    display: none;
+}
+
+.quote-text::before {
+    content: '"';
+    font-size: 100px;
+}
+
+.quote-text {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.quote-author {
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.buttons button {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 3px gray;
+    color: rgb(64, 5, 99);
+    font-weight: bold;
+    border: 2px solid rgb(64, 5, 99);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(64, 5, 99);
+    color: white;
+}
+
+button:active {
+    transform: translate(0, 3px);
+    box-shadow: none;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
