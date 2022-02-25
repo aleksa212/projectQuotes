@@ -8,7 +8,7 @@ const wrapper = document.querySelector('.wrapper');
 let apiQuotes = [];
 
 async function getQuotes() {
-    loaderActive()
+    loaderActive();
     const apiUrl = 'https://type.fit/api/quotes';
     try {
         const response = await fetch(apiUrl);
@@ -21,7 +21,7 @@ async function getQuotes() {
 }
 
 function randomQuote() {
-    loaderActive()
+    loaderActive();
     let quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
     if (!quote.author) {
         author.textContent = 'Unknown'
